@@ -1,0 +1,118 @@
+<!-- modifypw.html -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css"/>
+  <style>
+    .top_bar
+    {
+      width: 100%;
+      height: 30px;
+      background-color: #999
+    }
+    .back-view{
+      float:left;
+      margin-left:5px;
+      margin-top: 40px;
+    }
+    .header
+    {
+      text-align: center;
+    }
+    .header a
+    {
+      float: left;
+    }
+    .header h1
+    {
+      font-size: 200%;
+      color: #333;
+      margin-top: 30px;
+    }
+    .header p
+    {
+      font-size: 14px;
+    }
+    .my-form-row
+    {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .error_info
+    {
+      font-size: 14px;
+      color: #f00;
+    }
+    .sign_in_state 
+    {
+        font-size: 15px;
+        font-weight: 700;
+        color: #f00;
+    }
+    .body-text
+    {
+      font-size: 16px;
+      color: #999;
+    }
+    .bottom-bar
+    {
+      width: 100%;
+      height: 30px;
+      background-color: #999;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="top_bar" >
+</div>
+<div class="header">
+<div class="am-g">
+    <div class="am-u-sm-4">
+      <span class="am-icon-arrow-left am-icon-md back-view">
+      </span>
+    </div>
+    <div class="am-u-sm-4">
+      <h1 class="top-title">修改密码</h1>
+    </div>
+    <div class="am-u-sm-4">
+    </div>
+</div>
+<hr />
+</div>
+<div class="am-g">
+  <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+    <div class="am-form">
+      <input type="email" id="uemailaddress" class="my-form-row" placeholder="登录邮箱" />
+      <div class="error_info_uemailaddress error_info">
+      </div>
+      <input type="password" id="upassword" class="my-form-row" placeholder="新密码" />
+      <div class="error_info_upassword error_info">
+      </div>
+      <input type="password" id="upassword_confirmed" class="my-form-row" placeholder="确认密码" />
+      <div class="error_info_upassword_confirmed error_info">
+      </div>
+      <div class="sign_in_state"><br></div>
+      <div class="am-cf">
+        <button class="modify_password_commit am-btn am-btn-primary am-btn-sm am-fl">确 认</button>
+      </div>
+    </div>
+    <hr>
+    <div class="body-text">
+      简单、快捷地修改您的密码。
+    </div>
+  </div>
+</div>
+</body>
+<script src="assets/js/jQuery.js">
+</script>
+<script src="assets/js/modifypw.js" charset="utf-8" >
+</script>
+</html>
